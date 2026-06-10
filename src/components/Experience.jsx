@@ -234,12 +234,12 @@ function TimelineCard({ exp, index, isOpen, onToggle }) {
                       initial={{ opacity: 0, x: -12 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: j * 0.06 + 0.05, duration: 0.25 }}
-                      className="flex gap-3 items-start p-3 bg-bg/70 border border-transparent transition-colors duration-200 rounded-[1px] group/b"
-                      onMouseEnter={ev => ev.currentTarget.style.borderColor = exp.color + '30'}
+                      className="flex gap-3 items-start p-3 bg-bg/ border border-transparent transition-colors duration-200 rounded-[1px] group/b"
+                      onMouseEnter={ev => ev.currentTarget.style.borderColor = exp.color + '99'}
                       onMouseLeave={ev => ev.currentTarget.style.borderColor = 'transparent'}
                     >
                       <span className="text-[.85rem] flex-shrink-0 mt-0.5 select-none">{b.icon}</span>
-                      <span className="text-[.82rem] text-muted/80 group-hover/b:text-white/90 transition-colors duration-200 leading-relaxed">
+                      <span className="text-[.82rem] text-white/80 group-hover/b:text-white transition-colors duration-200 leading-relaxed">
                         {b.text}
                       </span>
                     </motion.div>
@@ -289,7 +289,7 @@ export default function Experience() {
             }}
           />
           <div className="sm:hidden absolute left-8 top-8 bottom-0 w-px"
-            style={{ background: 'linear-gradient(180deg, #ff3d5a22, #a855f722, #06b6d422)' }}
+            style={{ background: 'linear-gradient(180deg, #ff3d5a22, #a855f722, rgba(53, 213, 241, 0.24))' }}
           />
 
           {EXP.map((exp, i) => (
