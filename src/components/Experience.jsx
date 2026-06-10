@@ -41,10 +41,10 @@ const EXP = [
     logo: googleLogo,
     tags: ['Business Analytics', 'Power BI', 'Python', 'GCP', 'STEM-designated'],
     bullets: [
-      { icon: '🎓', text: 'Graduate studies in Business Analytics, Information Management, and strategic data systems.' },
-      { icon: '💻', text: 'Industry practicum and analytics projects using Python, SQL, Tableau, Power BI, and GCP.' },
-      { icon: '🔬', text: 'Building time-series forecasting pipelines and competitive analytics visualizations.' },
-      { icon: '🏆', text: 'Recipient of the Woman of Intelligence Award (Joan & Frank Trocki) 2024–2025.' },
+      { icon: '', text: 'Analyzed 30,000+ YouTube videos across 500+ channels to identify high-demand content opportunities and creator trends.' },
+      { icon: '', text: 'Performed data cleaning, EDA, and feature engineering in Python for analytics and machine learning workflows.' },
+      { icon: '', text: 'Developed NLP-based topic models and recommendation systems to generate explainable insights for data-driven decisions.' },
+      { icon: '', text: 'Built an AI-powered Streamlit dashboard with interactive visualizations, reducing research time by 40×; awarded 1st Place at the Future Edelman Impact Award.' },
     ],
   },
   {
@@ -56,11 +56,11 @@ const EXP = [
     logo: jayLogo,
     tags: ['Power BI', 'ETL', 'Python', 'SQL', 'Salesforce', 'CRM'],
     bullets: [
-      { icon: '📊', text: 'Drove 10% increase in marketing ROI and 3.3% revenue growth through data-led sales strategy improvements.' },
-      { icon: '⚙️', text: 'Built 25+ ETL workflows, boosting data integration efficiency and cutting processing time by 40%.' },
-      { icon: '🎯', text: 'Data analysis guided strategic decisions: 15% increase in customer retention and 10% operational efficiency boost.' },
-      { icon: '📈', text: 'Designed interactive Power BI dashboards tracking YTD/YOY revenue, geolocation trends, and demographics for executive stakeholders.' },
-      { icon: '🔗', text: 'Collaborated with sales on Salesforce dashboards and CRM-based reporting.' },
+      { icon: '', text: 'Drove 10% increase in marketing ROI and 3.3% revenue growth through data-led sales strategy improvements.' },
+      { icon: '', text: 'Built 25+ ETL workflows, boosting data integration efficiency and cutting processing time by 40%.' },
+      { icon: '', text: 'Data analysis guided strategic decisions: 15% increase in customer retention and 10% operational efficiency boost.' },
+      { icon: '', text: 'Designed interactive Power BI dashboards tracking YTD/YOY revenue, geolocation trends, and demographics for executive stakeholders.' },
+      { icon: '', text: 'Collaborated with sales on Salesforce dashboards and CRM-based reporting.' },
     ],
   },
   {
@@ -72,9 +72,9 @@ const EXP = [
     logo: ibmLogo,
     tags: ['Python', 'GANs', 'Deep Learning', 'Image Super Resolution'],
     bullets: [
-      { icon: '🤝', text: 'Collaborated with a team to develop a working Python model for Image Super Resolution.' },
-      { icon: '🧠', text: 'Trained a GAN-based model to generate high-resolution images from low-resolution inputs.' },
-      { icon: '🎨', text: 'Applied GANs to improve image clarity, enhance detail, and upscale content while preserving structure.' },
+      { icon: '', text: 'Collaborated with a team to develop a working Python model for Image Super Resolution.' },
+      { icon: '', text: 'Trained a GAN-based model to generate high-resolution images from low-resolution inputs.' },
+      { icon: '', text: 'Applied GANs to improve image clarity, enhance detail, and upscale content while preserving structure.' },
     ],
   },
 ]
