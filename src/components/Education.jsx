@@ -17,11 +17,11 @@ const PURDUE_SUBJECTS = [
   'Technology-Driven Business',
   'Data And AI-Driven Marketing',
   'AI For Business Decisions',
+  'Spreadsheet Modeling & Simulation',
   'Data Mining',
   'Visual Analytics',
   'Advanced Database',
   'Mgmt Of Orgnizatn Data',
-  'Advanced Database',
   'Cloud Computing I',
 ]
 
