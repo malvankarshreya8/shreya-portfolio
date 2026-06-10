@@ -9,7 +9,7 @@ export default function Footer() {
           © 2025 · MSBAIM · Purdue University · Indiana
         </span>
         <div className="flex gap-4">
-          {[['LinkedIn','https://www.linkedin.com/in/shreya-malvankar/'],['GitHub','#'],['Resume','#']].map(([n,h]) => (
+          {[['LinkedIn','https://www.linkedin.com/in/shreya-sunil-malvankar/'],['GitHub','#'],['Resume','#']].map(([n,h]) => (
             <a key={n} href={h} target="_blank"
               className="font-mono text-[10px] text-muted tracking-widest uppercase hover:text-rose transition-colors duration-200">
               {n} ↗

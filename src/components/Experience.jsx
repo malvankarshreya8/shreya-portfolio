@@ -29,11 +29,8 @@ const EXP = [
     logo: altardLogo,
     tags: ['Business Analytics', 'Power BI', 'Python', 'GCP', 'STEM-designated'],
     bullets: [
-      { icon: '🎓', text: 'Graduate studies in Business Analytics, Information Management, and strategic data systems.' },
-      { icon: '💻', text: 'Industry practicum and analytics projects using Python, SQL, Tableau, Power BI, and GCP.' },
-      { icon: '🔬', text: 'Building time-series forecasting pipelines and competitive analytics visualizations.' },
-      { icon: '🏆', text: 'Recipient of the Woman of Intelligence Award (Joan & Frank Trocki) 2024–2025.' },
-    ],
+      {  text: 'Incoming...' },
+     ],
   },
   {
     period: 'Jan 2026 – May 2026',
