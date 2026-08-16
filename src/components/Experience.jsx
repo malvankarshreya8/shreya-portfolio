@@ -22,14 +22,19 @@ function useReveal() {
 const EXP = [
   {
     period: 'Jun 2026 – Aug 2026',
-    role: 'IT Help Desk Analytics Intern',
-    company: "Altar'd State",
+    role: 'IT Business Analyst Intern',
+    company: "Altar'd State | Stand Out for Good Inc.",
     location: 'Tennessee, USA',
     color: '#F8ACCD',
     logo: altardLogo,
     tags: ['Process Improvement', 'Data Analysis', 'Workflow Automation', 'IT Operations', 'Technical Documentation', 'Root Cause Analysis'],
     bullets: [
-      {  text: 'Incoming...' },
+      { icon: '*', text: 'Performed data analysis on 41,000+ IT service tickets using SQL, BigQuery, and Excel to identify trends, root causes, and key performance indicators for leadership reporting.' },
+      { icon: '*', text: 'Conducted seasonal demand forecasting on 5,161 Back-to-School and 58,421 Christmas peak season tickets, informing pre-season operational planning across both peak retail periods.' },
+      { icon: '*', text: 'Built KPI dashboards and data visualizations tracking Mean Time to Resolution, SLA compliance, and cost-per-ticket metrics for executive stakeholders.' },
+      { icon: '*', text: 'Cleaned, standardized, and analyzed large datasets (40,000+ records) using pivot tables, VLOOKUP, and COUNTIFS to support data-driven decision making.' },
+      { icon: '*', text: 'Analyzed Facilities maintenance data and budget/spend records to identify cost correlations and operational inefficiencies.' },
+      { icon: '*', text: 'Collaborated with a cross-functional engineering team (Infosys) to write SQL queries prioritizing 116 data scenarios by transaction volume for a production analytics solution.' },
      ],
   },
   {
