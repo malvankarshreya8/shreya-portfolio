@@ -6,10 +6,10 @@ export default function Footer() {
           Shreya <span className="gradient-text not-italic">Malvankar</span>
         </span>
         <span className="font-mono text-[10px] text-muted tracking-widest">
-          © 2025 · MSBAIM · Purdue University · Indiana
+          © {new Date().getFullYear()} · MSBAIM · Purdue University · Indiana
         </span>
         <div className="flex gap-4">
-          {[['LinkedIn','https://www.linkedin.com/in/shreya-sunil-malvankar/'],['GitHub','#'],['Resume','#']].map(([n,h]) => (
+          {[['LinkedIn','https://www.linkedin.com/in/shreya-sunil-malvankar/'],['Resume','/Shreya_M_Resume.pdf']].map(([n,h]) => (
             <a key={n} href={h} target="_blank"
               className="font-mono text-[10px] text-muted tracking-widest uppercase hover:text-rose transition-colors duration-200">
               {n} ↗

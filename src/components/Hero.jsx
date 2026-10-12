@@ -58,7 +58,7 @@ export default function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-3" style={{animation:'slideUp .8s .7s both'}}>
-            <a href="https://www.linkedin.com/in/shreya-malvankar/" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.linkedin.com/in/shreya-sunil-malvankar/" target="_blank" rel="noopener noreferrer"
               className="px-6 py-3 bg-rose text-white font-mono text-[11px] tracking-widest uppercase hover:bg-rose2 transition-colors duration-200 flex items-center gap-2">
               LinkedIn ↗
             </a>
