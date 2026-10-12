@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 
 function useReveal() {
   const ref = useRef(null)
@@ -11,8 +11,6 @@ function useReveal() {
 }
 
 export default function Contact() {
-  const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' })
-  const [sent, setSent] = useState(false)
   const r1 = useReveal(), r2 = useReveal()
 
   return (
@@ -35,7 +33,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <div ref={r2} className="reveal-on-scroll grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div ref={r2} className="reveal-on-scroll max-w-md">
           {/* Contact info */}
           <div className="flex flex-col gap-3">
             {[
@@ -57,7 +55,7 @@ export default function Contact() {
             ))}
 
             <div className="flex gap-3 mt-2">
-              {[['LinkedIn','https://www.linkedin.com/in/shreya-sunil-malvankar/'],['GitHub','#'],['Resume','#']].map(([n,h]) => (
+              {[['LinkedIn','https://www.linkedin.com/in/shreya-sunil-malvankar/'],['Resume','/Shreya_M_Resume.pdf']].map(([n,h]) => (
                 <a key={n} href={h} target="_blank"
                   className="flex-1 text-center font-mono text-[10px] tracking-widest uppercase py-2.5 border border-dim text-muted hover:border-rose hover:text-rose transition-all duration-200">
                   {n} ↗
@@ -65,96 +63,6 @@ export default function Contact() {
               ))}
             </div>
           </div>
-
-
-{/* Form */}
-{sent ? (
-  <div className="bg-card border border-rose/30 p-10 text-center flex flex-col items-center justify-center">
-    <div className="text-4xl mb-3">✅</div>
-    <div className="font-display italic text-[1.4rem] text-rose mb-1">
-      Message sent!
-    </div>
-    <p className="text-muted text-sm">
-      I'll get back to you soon.
-    </p>
-  </div>
-) : (
-  <form
-    name="contact"
-    method="POST"
-    data-netlify="true"
-    netlify-honeypot="bot-field"
-    onSubmit={() => setSent(true)}
-    className="flex flex-col gap-3"
-  >
-    {/* Required hidden input */}
-    <input type="hidden" name="form-name" value="contact" />
-
-    {/* Spam protection */}
-    <input type="hidden" name="bot-field" />
-
-    <div className="grid grid-cols-2 gap-3">
-      <input
-        name="name"
-        required
-        placeholder="First name"
-        value={form.name}
-        onChange={(e) =>
-          setForm((f) => ({ ...f, name: e.target.value }))
-        }
-        className="p-3 bg-card border border-cborder text-white font-body text-[.85rem] outline-none focus:border-rose transition-colors duration-200 placeholder:text-muted"
-      />
-
-      <input
-        name="email"
-        type="email"
-        required
-        placeholder="Email"
-        value={form.email}
-        onChange={(e) =>
-          setForm((f) => ({ ...f, email: e.target.value }))
-        }
-        className="p-3 bg-card border border-cborder text-white font-body text-[.85rem] outline-none focus:border-rose transition-colors duration-200 placeholder:text-muted"
-      />
-    </div>
-
-    <input
-      name="subject"
-      placeholder="Subject"
-      value={form.subject}
-      onChange={(e) =>
-        setForm((f) => ({ ...f, subject: e.target.value }))
-      }
-      className="p-3 bg-card border border-cborder text-white font-body text-[.85rem] outline-none focus:border-rose transition-colors duration-200 placeholder:text-muted"
-    />
-
-    <textarea
-      name="message"
-      required
-      rows={5}
-      placeholder="Your message…"
-      value={form.message}
-      onChange={(e) =>
-        setForm((f) => ({ ...f, message: e.target.value }))
-      }
-      className="p-3 bg-card border border-cborder text-white font-body text-[.85rem] outline-none focus:border-rose transition-colors duration-200 placeholder:text-muted resize-none"
-    />
-
-    <button
-      type="submit"
-      className="self-start px-7 py-3 bg-rose text-white font-mono text-[11px] tracking-widest uppercase hover:bg-rose2 transition-colors duration-200"
-    >
-      Send Message →
-    </button>
-  </form>
-)}
-<form name="contact" data-netlify="true" hidden>
-  <input name="name" />
-  <input name="email" />
-  <input name="subject" />
-  <textarea name="message"></textarea>
-</form>
-
         </div>
       </div>
     </section>

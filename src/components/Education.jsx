@@ -21,7 +21,7 @@ const PURDUE_SUBJECTS = [
   'Data Mining',
   'Visual Analytics',
   'Advanced Database',
-  'Mgmt Of Orgnizatn Data',
+  'Management of Organizational Data',
   'Cloud Computing I',
 ]
 

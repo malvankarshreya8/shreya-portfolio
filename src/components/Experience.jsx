@@ -63,7 +63,7 @@ const EXP = [
     bullets: [
       { icon: '*', text: 'Drove 10% increase in marketing ROI and 3.3% revenue growth through data-led sales strategy improvements.' },
       { icon: '*', text: 'Built 25+ ETL workflows, boosting data integration efficiency and cutting processing time by 40%.' },
-      { icon: '*', text: 'Data analysis guided strategic decisions: 15% increase in customer retention and 10% operational efficiency boost.' },
+      { icon: '*', text: 'Drove 15% increase in customer retention and 10% operational efficiency boost through data-guided strategic decisions.' },
       { icon: '*', text: 'Designed interactive Power BI dashboards tracking YTD/YOY revenue, geolocation trends, and demographics for executive stakeholders.' },
       { icon: '*', text: 'Collaborated with sales on Salesforce dashboards and CRM-based reporting.' },
     ],

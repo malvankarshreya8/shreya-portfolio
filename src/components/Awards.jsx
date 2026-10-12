@@ -14,7 +14,7 @@ const AWARDS  = [
   { icon: '🥇', title: 'Future Edelman Award | 1st Place', sub: 'Project: Youtube: Optimizing Content Strategy with Public Data, Semantic Modeling & LLMs | Purdue', color: '#F5490B' },
   { icon: '🏆', title: 'Woman of Intelligence Award', sub: 'Joan & Frank Trocki 2024–25 | XIE', color: '#f59e0b' },
   { icon: '🎉', title: 'Project Competition | 3rd Place', sub: 'Multiformat File Analyzer · Dept-level project | XIE', color: '#4FAE0F' },
-  { icon: '📝', title: 'English to Marathi Translation: A Survey of Parallel Corpora, Datasets, Methodologies and Tools', sub: 'Springer - March 2026 | XIE', color: '#4FAE0F' },
+  { icon: '📝', title: 'Published Research — Springer', sub: 'English to Marathi Translation: A Survey of Parallel Corpora, Datasets, Methodologies and Tools · March 2026 | XIE', color: '#4FAE0F' },
 
 ]
 

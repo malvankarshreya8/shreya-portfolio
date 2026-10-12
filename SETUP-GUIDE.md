@@ -154,10 +154,70 @@ Netlify is now connected to GitHub. Every time you:
 | Add a project | Edit `src/components/Projects.jsx`, copy an existing card block |
 | Add/remove a skill tag | Edit `src/components/Skills.jsx`, find the right group |
 | Change colors | Edit `tailwind.config.js` under `colors:` |
-| Add a new experience | Edit `src/components/Experience.jsx`, add to the `EXP` array |
+| Add a new experience | Edit `src/components/Experience.jsx`, add to the `EXP` array — see Part 5 |
+| Swap in a new resume PDF | Drop `Shreya_M_Resume.pdf` into `public/`, same filename — see Part 5 |
 | Update contact email | Edit `src/components/Contact.jsx` and `src/components/Nav.jsx` |
 | Add your photo | Put photo in `public/`, edit `Hero.jsx` (see Step 6 above) |
 | Update LinkedIn URL | Search the whole project for `shreya-malvankar` and replace |
+
+---
+
+## PART 5 — RESUME & EXPERIENCE CHECKLIST (do this every time, no Claude needed)
+
+### A) Swapping in a new resume PDF
+1. Rename your new resume file to exactly `Shreya_M_Resume.pdf` (same name as the old one).
+2. Drag it into the `public/` folder, replacing the existing file when VS Code asks.
+3. That's it — `Hero.jsx`, `Footer.jsx`, and `Contact.jsx` all link to `/Shreya_M_Resume.pdf`, so nothing else needs to change.
+   - If you'd rather keep a different filename, you'd need to update the `href`/`download` in those 3 files to match — easier to just keep the name the same.
+   - There's also a leftover copy of the PDF at the project root (not `public/`) — that one isn't used by the live site, ignore it or delete it.
+
+### B) Adding a new job / internship to the Experience timeline
+Everything lives in `src/components/Experience.jsx`, inside the `EXP` array (top of the file).
+
+1. **Get a logo image** for the company (square-ish, PNG/JPG) and drop it in the `logo/` folder.
+2. **Import it** at the top of `Experience.jsx`:
+   ```jsx
+   import newCoLogo from '../../logo/new_company_logo.png'
+   ```
+3. **Add a new entry** to the `EXP` array — copy this template and fill it in:
+   ```jsx
+   {
+     period: 'Mon YYYY – Mon YYYY',
+     role: 'Your Job Title',
+     company: 'Company Name',
+     location: 'City, State/Country',
+     color: '#XXXXXX',        // pick a NEW hex not already used (see below)
+     logo: newCoLogo,
+     tags: ['Skill Tag 1', 'Skill Tag 2', 'Skill Tag 3'],   // 4-7 short tags
+     bullets: [
+       { icon: '*', text: 'Achievement bullet — lead with a metric/number if you have one.' },
+       { icon: '*', text: 'Another bullet.' },
+     ],
+   },
+   ```
+4. **Where to put it in the array**: entries are ordered newest → oldest, top to bottom. Insert your new job at the top (or wherever it falls chronologically).
+5. **Colors already in use** (pick a different one for the new entry so cards stay visually distinct):
+   - `#F8ACCD` (pink) · `#04B138` (green) · `#ff3d5a` (red) · `#55F4F7` (cyan)
+6. Save the file — the dev server (`npm run dev`) hot-reloads automatically, so check it in the browser.
+
+### C) Keep Skills.jsx in sync
+If the new role used tools/skills not already listed, add them to the matching category in `src/components/Skills.jsx` (`CATEGORIES` array near the top). Each skill needs a `tier`:
+- `tier: 1` = biggest/headline (use sparingly, 1-2 per category)
+- `tier: 2` = medium
+- `tier: 3` = smallest/supporting detail
+
+Try to keep each category's total skill count roughly even (4-7) so none look empty or overloaded next to the others.
+
+### D) Other things a new role might touch
+- **`src/components/Awards.jsx`** — if the role came with an award/recognition, add it here (same pattern as the existing entries).
+- **`src/components/Education.jsx`** — only if the role changes your education status (e.g. new certification).
+- You generally do **not** need to touch `Hero.jsx`, `Nav.jsx`, or `Contact.jsx` for a new job — those don't reference specific roles.
+
+### E) Save your work to GitHub
+Steps 9-13 above cover this, but the short version once you're set up:
+1. Source Control panel → stage changes → write a commit message → commit.
+2. Push (or click **Publish Branch** the first time).
+3. If Netlify is connected, your live site updates automatically within ~2 minutes.
 
 ---
 
